@@ -28,6 +28,14 @@
     <orderEntry type="library" name="sbt: com.google.guava:guava:16.0.1:jar" level="project" />
     <orderEntry type="library" name="sbt: com.google.protobuf:protobuf-java:3.14.0:jar" level="project" />
     <orderEntry type="library" name="sbt: com.jolbox:bonecp:0.8.0.RELEASE:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.lihaoyi:geny_2.13:0.7.1:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.lihaoyi:os-lib_2.13:0.8.1:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.lihaoyi:requests_2.13:0.7.1:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.lihaoyi:ujson_2.13:2.0.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.lihaoyi:upack_2.13:2.0.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.lihaoyi:upickle-core_2.13:2.0.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.lihaoyi:upickle-implicits_2.13:2.0.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.lihaoyi:upickle_2.13:2.0.0:jar" level="project" />
     <orderEntry type="library" name="sbt: com.ning:compress-lzf:1.0.3:jar" level="project" />
     <orderEntry type="library" name="sbt: com.tdunning:json:1.8:jar" level="project" />
     <orderEntry type="library" name="sbt: com.thoughtworks.paranamer:paranamer:2.8:jar" level="project" />
