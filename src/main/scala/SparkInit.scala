@@ -1,7 +1,7 @@
 import org.apache.hadoop.fs.FileAlreadyExistsException
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql
-import org.apache.spark.sql.{AnalysisException, DataFrame, Dataset, SparkSession}
+import org.apache.spark.sql.{AnalysisException, DataFrame, Dataset, SaveMode, SparkSession}
 
 class SparkInit(appName:String) {
   val spark = SparkSession
@@ -12,16 +12,19 @@ class SparkInit(appName:String) {
     .getOrCreate()
   Logger.getLogger("org").setLevel(Level.ERROR)
 
-  def writeHDFS(df:DataFrame):Unit = {
+  def writeHDFS(df:DataFrame, path:String):Unit = {
     try {
-      df.write.json("hdfs://localhost:9000/tmp/project1/restaurantInspectionJson.json")
+      df.write.json(path)
     } catch {
-      case e: AnalysisException => println("File Already Exists!")
+      case e: AnalysisException => {
+        println("File Already Exists! Overwriting...")
+        df.write.mode(SaveMode.Overwrite).json(path)
+      }
     }
   }
 
-  def readHDFS():DataFrame = {
-    val df = spark.read.json("hdfs://localhost:9000/tmp/project1/restaurantInspectionJson.json")
+  def readHDFS(path:String):DataFrame = {
+    val df = spark.read.json(path)
     df
   }
 
