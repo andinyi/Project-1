@@ -50,7 +50,8 @@ object Main {
               userInput = readLine()
             } //catch not in list()
             if (userInput == "exit") {
-              df.write.mode(SaveMode.Overwrite).json("result_df")
+              //df.write.mode(SaveMode.Overwrite).json("result_df")
+              df.coalesce(1).write.format("json").save("result_df.json")
               return true
             }
             if (userInput == "1") { //Query 1: All Restaurants with Rating B and Above
@@ -88,7 +89,7 @@ object Main {
             }
             if (userInput == "6") { //What is the average inspection grade based on zipcode?
               df.createOrReplaceTempView("query6")
-              println(s"${CYAN}The average is represented numerically! Key of 1-4.${RESET}")
+              println(s"${CYAN}The average is represented numerically! Key of 1-3.${RESET}")
               session.spark.sql(queryText.getQuery6()).show(resultNum, false)
             }
             if (userInput == "setRows") {
