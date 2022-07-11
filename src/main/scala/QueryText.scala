@@ -15,6 +15,6 @@ class QueryText {
 
   def getQuery6():String =
     {
-      """SELECT zipcode as Zipcode, AVG(CASE grade WHEN 'A' THEN 4 WHEN 'B' THEN 3 WHEN 'C' THEN 2 WHEN 'D' THEN 1 END) as Grade FROM query6 WHERE grade IS NOT NULL AND zipcode IS NOT NULL GROUP BY zipcode"""
+      """SELECT zipcode as Zipcode, AVG(CASE grade WHEN 'A' THEN 4 WHEN 'B' THEN 3 WHEN 'C' THEN 2 WHEN 'D' THEN 1 END) as Grade FROM query6 WHERE grade IS NOT NULL AND zipcode IS NOT NULL GROUP BY zipcode ORDER BY zipcode"""
     }
 }

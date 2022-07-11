@@ -26,7 +26,7 @@
     <orderEntry type="library" name="sbt: com.google.crypto.tink:tink:1.6.0:jar" level="project" />
     <orderEntry type="library" name="sbt: com.google.flatbuffers:flatbuffers-java:1.9.0:jar" level="project" />
     <orderEntry type="library" name="sbt: com.google.guava:guava:16.0.1:jar" level="project" />
-    <orderEntry type="library" name="sbt: com.google.protobuf:protobuf-java:3.14.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.google.protobuf:protobuf-java:3.19.4:jar" level="project" />
     <orderEntry type="library" name="sbt: com.jolbox:bonecp:0.8.0.RELEASE:jar" level="project" />
     <orderEntry type="library" name="sbt: com.lihaoyi:geny_2.13:0.7.1:jar" level="project" />
     <orderEntry type="library" name="sbt: com.lihaoyi:os-lib_2.13:0.8.1:jar" level="project" />
@@ -81,6 +81,7 @@
     <orderEntry type="library" name="sbt: jline:jline:2.12:jar" level="project" />
     <orderEntry type="library" name="sbt: joda-time:joda-time:2.10.10:jar" level="project" />
     <orderEntry type="library" name="sbt: log4j:log4j:1.2.17:jar" level="project" />
+    <orderEntry type="library" name="sbt: mysql:mysql-connector-java:8.0.29:jar" level="project" />
     <orderEntry type="library" name="sbt: net.razorvine:pyrolite:4.30:jar" level="project" />
     <orderEntry type="library" name="sbt: net.sf.opencsv:opencsv:2.3:jar" level="project" />
     <orderEntry type="library" name="sbt: net.sf.py4j:py4j:0.10.9.3:jar" level="project" />
